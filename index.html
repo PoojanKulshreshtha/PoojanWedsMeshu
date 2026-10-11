@@ -73,17 +73,17 @@ body.locked .hero .w{opacity:0;transform:translateY(26px)}
 .chips{display:flex;gap:12px;justify-content:center;margin:12px 0 8px}.chips i{width:34px;height:34px;border-radius:50%;box-shadow:0 0 0 2px rgba(74,10,23,.15)}
 .bt{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding:14px 28px;border:1.5px solid currentColor;border-radius:99px;color:inherit;text-decoration:none;font:600 16px Hind,sans-serif;letter-spacing:.04em;background:none;cursor:pointer}
 .bt svg{width:19px;fill:none;stroke:currentColor;stroke-width:1.7}
-.c1{background:#f6b3c4}.c2{background:#cfe9cf}.c3{background:#ffd2b0}.c4{background:#fff3e6;box-shadow:0 0 0 3px var(--gold)}
-.ar.hasim{padding-top:74px}.im.haldi{height:clamp(195px,58vw,228px)}.im{display:block;margin:0 auto 14px;height:clamp(165px,50vw,205px);width:auto;max-width:78%;object-fit:contain;filter:drop-shadow(0 8px 12px rgba(74,10,23,.22))}
+.c1{background:#f6b3c4}.c2{background:#cfe9cf}.c3{background:#ffd2b0}.c4{background:#fff3e6;box-shadow:0 0 0 3px var(--gold)}.c5{background:#f8e3a3}.c6{background:#dcd6f0}
+.ar.hasim{padding-top:74px}.im.haldi{height:clamp(195px,58vw,228px)}.im.bhaat{height:clamp(165px,48vw,200px)}.im{display:block;margin:0 auto 14px;height:clamp(165px,50vw,205px);width:auto;max-width:78%;object-fit:contain;filter:drop-shadow(0 8px 12px rgba(74,10,23,.22))}
 .c4 h3{font-size:clamp(46px,14vw,60px)}.c4 .wh{color:var(--deep)}
 .st{border:1.5px solid var(--gold);border-radius:32px;padding:34px 26px;text-align:center;background:#8c1328 var(--jali);margin-bottom:10px}
 .st h3{font-size:34px;margin:6px 0 8px;color:var(--ivory)}.st .bt{color:var(--gold2)}
 footer{background:var(--deep);padding:76px 0 104px;text-align:center;border-top:3px solid var(--gold)}
 footer p{color:var(--peach);font-size:20px}footer .fn{font-size:clamp(24px,8vw,44px);white-space:nowrap;color:var(--gold2);margin:46px 0 12px}
-.fam{display:grid;grid-template-columns:1.25fr 1fr;margin:46px 0 8px}
+.fam{display:grid;grid-template-columns:2fr 1fr;margin:46px 0 8px}.sub2{display:grid;grid-template-columns:1fr 1fr}.sub2>div{padding:0 6px}.sub2>div+div{border-left:1px dashed rgba(224,169,58,.35)}.fam h5{font:600 15px Hind,sans-serif;letter-spacing:.08em;color:var(--gold);margin-bottom:12px}
 .fam>div{padding:0 10px}.fam>div+div{border-left:1px solid rgba(224,169,58,.5)}
 .fam h4{font:400 26px 'Rozha One',serif;color:var(--gold2);letter-spacing:.05em;margin-bottom:18px}
-.fam p{font-size:17px;line-height:1.35;color:var(--peach);margin-bottom:13px}
+.fam p{font-size:16px;line-height:1.35;color:var(--peach);margin-bottom:13px}
 .kid{margin:46px auto 0;max-width:380px;border:1.5px dashed rgba(224,169,58,.7);border-radius:28px;padding:26px 22px 28px;background:rgba(255,243,230,.06)}
 .kid small{display:block;font:500 15px Hind,sans-serif;letter-spacing:.08em;color:var(--gold)}
 .kid q{display:block;margin-top:8px;font:700 clamp(32px,9.6vw,42px)/1.2 Caveat,cursive;color:var(--ivory);quotes:"“" "”"}
@@ -138,7 +138,8 @@ footer .dd{font:500 17px Hind,sans-serif;letter-spacing:.2em;color:var(--ivory)}
 
 <footer><div class="w"><p>With love and blessings from the<br>families</p>
 <div class="fam"><div><h4>RSVP</h4>
-<p>Shri Dr.Yogendra Babu</p><p>Sanjay-Archana</p><p>Atul-Alpana</p><p>Sunil-Neeta</p><p>Salil-Vandana</p></div>
+<div class="sub2"><div><h5>Dadihal</h5><p>Shri Dr. Yogendra Babu</p><p>Sanjay-Archana</p><p>Atul-Alpana</p><p>Achala</p></div>
+<div><h5>Nanihal</h5><p>Akhilesh</p><p>Sunil-Neeta</p><p>Salil-Vandana</p></div></div></div>
 <div><h4>WBCF</h4>
 <p>Yesha-Saksham</p><p>Sankalp-Harshita</p><p>Shreya-Mudit</p><p>Kripansh</p><p>Suruchi-Arvind</p><p>Arpit-Shilpa</p><p>Aayush</p><p>Gauri</p><p>Sanskar</p><p>Aaryan</p></div></div>
 <div class="kid"><small>Cutest invitation </small><q>Mele Mama Ki Shaadi mein Jalul Jalul Aana</q><p>Shravya</p></div>
@@ -150,13 +151,15 @@ footer .dd{font:500 17px Hind,sans-serif;letter-spacing:.2em;color:var(--ivory)}
 const WEDDING=new Date('2026-12-12T00:00:00+05:30');
 const $=s=>document.querySelector(s),M=q=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
 const pin='<svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>';
-const IM={lagun:'lagun.webp',haldi:'haldi.webp',sangeet:'sangeet.webp',wedding:'wedding.webp'};
+const IM={lagun:'lagun.webp',haldi:'haldi.webp',sangeet:'sangeet.webp',wedding:'wedding.webp',bhaat:'bhaat.webp',baraat:'baraat.webp'};
 const EV=[
-{c:'c1',i:'lagun',n:'Lagun Sagai',w:'11th December · 11:00 AM',p:'Banquet Hall',s:'The Mantra One by Blues',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
+{c:'c1',i:'lagun',n:'Lagun Sagai',w:'11th December · 11:00 AM',p:'The Mantra One by Blues',s:'',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
 {c:'c2',i:'haldi',n:'Haldi',w:'11th December · 2:00 PM',p:'The Mantra One by Blues',s:'',dr:'Pastel colours',ch:['#f4a6c0','#a9dcb4','#f6d14e'],cn:'Pink · Green · Yellow',q:'The Mantra One by Blues SG Highway Ahmedabad'},
-{c:'c3',i:'sangeet',n:'Sangeet & Dinner',w:'11th December · 6:30 PM',p:'Banquet Hall',s:'Hotel Grand Elegance, Sindhu Bhavan, Ahmedabad',dr:'',q:'Hotel Grand Elegance Sindhu Bhavan Ahmedabad'},
-{c:'c4',i:'wedding',n:'The Wedding',w:'12th December 2026',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'}];
-$('#evs').innerHTML=EV.map(e=>`<article class="ar ${e.c}${e.i?' hasim':''}">${e.i?`<img class="im ${e.i}" alt="" decoding="async" src="${IM[e.i]}">`:''}<p class="wh">${e.w}</p><h3 class="d">${e.n}</h3><p class="pl">${e.p}${e.s?`<small>${e.s}</small>`:''}</p>${e.dr?`<hr><div class="dc"><b>Dress</b>${e.ch?`<div class="chips">${e.ch.map(c=>`<i style="background:${c}"></i>`).join('')}</div>${e.cn}<br>`:''}${e.dr}</div>`:''}<a class="bt" target="_blank" rel="noopener" href="${M(e.q)}">${pin}Get directions</a></article>`).join('');
+{c:'c5',i:'bhaat',n:'Bhaat & Mandap',w:'11th December · 4:30 PM',p:'The Mantra One by Blues',s:'',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
+{c:'c3',i:'sangeet',n:'Sangeet & Dinner',w:'11th December · 6:30 PM',p:'Hotel Grand Elegance',s:'Sindhu Bhavan, Ahmedabad',dr:'',q:'Hotel Grand Elegance Sindhu Bhavan Ahmedabad'},
+{c:'c6',i:'baraat',n:'Baraat',w:'12th December · 10:30 AM',p:'',s:'',dr:'',q:''},
+{c:'c4',i:'wedding',n:'The Wedding',w:'12th December 2026 · 12:30 PM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'}];
+$('#evs').innerHTML=EV.map(e=>`<article class="ar ${e.c}${e.i?' hasim':''}">${e.i?`<img class="im ${e.i}" alt="" decoding="async" src="${IM[e.i]}">`:''}<p class="wh">${e.w}</p><h3 class="d">${e.n}</h3>${e.p?`<p class="pl">${e.p}${e.s?`<small>${e.s}</small>`:''}</p>`:''}${e.dr?`<hr><div class="dc"><b>Dress</b>${e.ch?`<div class="chips">${e.ch.map(c=>`<i style="background:${c}"></i>`).join('')}</div>${e.cn}<br>`:''}${e.dr}</div>`:''}${e.q?`<a class="bt" target="_blank" rel="noopener" href="${M(e.q)}">${pin}Get directions</a>`:''}</article>`).join('');
 $('#stl').href=M('The Mantra One by Blues SG Highway Ahmedabad');$('#stl').innerHTML=pin+'Get directions';
 /* countdown */
 function tick(){const s=Math.max(0,(WEDDING-Date.now())/1e3|0),z=n=>String(n).padStart(2,'0');
