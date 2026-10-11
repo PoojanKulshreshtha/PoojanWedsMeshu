@@ -144,7 +144,7 @@ footer .dd{font:500 17px Hind,sans-serif;letter-spacing:.2em;color:var(--ivory)}
 
 <footer><div class="w"><p>With love and blessings from the<br>families</p>
 <div class="fam"><div><h4>RSVP</h4>
-<div class="sub2"><div><h5>Dadihal</h5><p>Shri Dr. Yogendra Babu</p><p>Sanjay-Archana</p><p>Atul-Alpana</p><p>Achala</p></div>
+<div class="sub2"><div><h5>Dadihal</h5><p>Yogendra Babu</p><p>Sanjay-Archana</p><p>Atul-Alpana</p><p>Achala</p></div>
 <div><h5>Nanihal</h5><p>Akhilesh</p><p>Sunil-Neeta</p><p>Salil-Vandana</p></div></div></div>
 <div><h4>WBCF</h4>
 <p>Yesha-Saksham</p><p>Sankalp-Harshita</p><p>Shreya-Mudit</p><p>Kripansh</p><p>Suruchi-Arvind</p><p>Arpit-Shilpa</p><p>Aayush</p><p>Gauri</p><p>Sanskar</p><p>Aaryan</p></div></div>
@@ -163,7 +163,7 @@ const EV=[
 {c:'c2',i:'haldi',n:'Haldi',w:'11th December · 2:00 PM',p:'The Mantra One by Blues',s:'',dr:'Pastel colours',ch:['#f4a6c0','#a9dcb4','#f6d14e'],cn:'Pink · Green · Yellow',q:'The Mantra One by Blues SG Highway Ahmedabad'},
 {c:'c5',i:'bhaat',n:'Bhaat & Mandap',w:'11th December · 4:30 PM',p:'The Mantra One by Blues',s:'',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
 {c:'c3',i:'sangeet',n:'Sangeet & Dinner',w:'11th December · 6:30 PM',p:'Hotel Grand Elegance',s:'Sindhu Bhavan, Ahmedabad',dr:'',q:'Hotel Grand Elegance Sindhu Bhavan Ahmedabad'},
-{c:'c6',i:'baraat',n:'Baraat',w:'12th December · 10:30 AM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'},
+{c:'c6',i:'baraat',n:'Baraat',w:'12th December · 10:30 AM',p:'The Mantra One by blues -> The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'},
 {c:'c4',i:'wedding',n:'The Wedding',w:'12th December · 12:30 PM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'}];
 $('#evs').innerHTML=EV.map(e=>`<article class="ar ${e.c}${e.i?' hasim':''}">${e.i?`<img class="im ${e.i}" alt="" decoding="async" src="${IM[e.i]}">`:''}<p class="wh">${e.w}</p><h3 class="d">${e.n}</h3>${e.p?`<p class="pl">${e.p}${e.s?`<small>${e.s}</small>`:''}</p>`:''}${e.dr?`<hr><div class="dc"><b>Dress</b>${e.ch?`<div class="chips">${e.ch.map(c=>`<i style="background:${c}"></i>`).join('')}</div>${e.cn}<br>`:''}${e.dr}</div>`:''}${e.q?`<a class="bt" target="_blank" rel="noopener" href="${M(e.q)}">${pin}Get directions</a>`:''}</article>`).join('');
 $('#stl').href=M('The Mantra One by Blues SG Highway Ahmedabad');$('#stl').innerHTML=pin+'Get directions';
