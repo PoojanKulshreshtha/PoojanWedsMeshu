@@ -4,7 +4,7 @@
 <title>Meshva & Poojan | 12 December 2026</title>
 <meta name="theme-color" content="#7a0f24">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Hind:wght@400;500;600&family=Rozha+One&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Hind:wght@400;500;600&family=Rozha+One&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&family=Hind:wght@400;500;600&family=Rozha+One&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&family=Hind:wght@400;500;600&family=Rozha+One&display=swap"></noscript>
 <style>
 :root{--red:#7a0f24;--red2:#9b1b30;--deep:#4a0a17;--gold:#e0a93a;--gold2:#f2c96a;--peach:#ffd9bd;--pink:#f6b3c4;--ivory:#fff3e6;--haldi:#fbe08a;
 --jali:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cg fill='none' stroke='%23e0a93a' stroke-opacity='.45' stroke-width='1.2'%3E%3Cpath d='M24 2l22 22-22 22L2 24z'/%3E%3Ccircle cx='24' cy='24' r='7'/%3E%3Cpath d='M24 17v14M17 24h14'/%3E%3C/g%3E%3C/svg%3E");
@@ -65,7 +65,7 @@ body.locked .hero .w{opacity:0;transform:translateY(26px)}
 .ce .sub{text-align:center;color:var(--peach);margin:10px 0 48px;font-size:20px}.ce h2{color:var(--gold2)}
 .ar{position:relative;border-radius:240px 240px 32px 32px;padding:84px 26px 40px;text-align:center;margin-bottom:34px;color:var(--deep)}
 .ar::before{content:"";position:absolute;top:10px;right:10px;bottom:10px;left:10px;border-radius:230px 230px 24px 24px;border:1px solid var(--deep);opacity:.3;pointer-events:none}
-.ar .wh{font:600 17px Hind,sans-serif;letter-spacing:.04em;color:var(--red2)}
+.ar .wh{font:700 clamp(18px,5.3vw,21px)/1.3 Hind,sans-serif;letter-spacing:.02em;color:var(--red2);text-wrap:balance}
 .ar h3{font-size:clamp(38px,11vw,48px);margin:6px 0 14px}
 .ar .pl{font-size:21px;line-height:1.35}.ar .pl small{display:block;font-size:17px;opacity:.75}
 .ar hr{border:0;border-top:1.5px dashed var(--deep);opacity:.3;margin:26px 0}
@@ -91,6 +91,7 @@ footer p{color:var(--peach);font-size:20px}footer .fn{font-size:clamp(24px,8vw,4
 .fam p{font-size:16px;line-height:1.35;color:var(--peach);margin-bottom:13px}
 .kid{margin:46px auto 0;max-width:380px;border:1.5px dashed rgba(224,169,58,.7);border-radius:28px;padding:26px 22px 28px;background:rgba(255,243,230,.06)}
 .kid small{display:block;font:500 15px Hind,sans-serif;letter-spacing:.08em;color:var(--gold)}
+.kid .sv{display:inline-block;margin-top:14px;font:400 clamp(34px,10.4vw,46px)/1.2 Pacifico,cursive;color:#ffb3cb;text-shadow:0 2px 14px rgba(255,179,203,.35);transform:rotate(-3deg)}
 .kid q{display:block;margin-top:8px;font:700 clamp(32px,9.6vw,42px)/1.2 Caveat,cursive;color:var(--ivory);quotes:"“" "”"}
 footer .dd{font:500 17px Hind,sans-serif;letter-spacing:.2em;color:var(--ivory)}
 #snd{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:56px;height:56px;border-radius:50%;background:var(--deep);border:1.5px solid var(--gold);display:none;place-items:center;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.4)}
@@ -147,7 +148,7 @@ footer .dd{font:500 17px Hind,sans-serif;letter-spacing:.2em;color:var(--ivory)}
 <div><h5>Nanihal</h5><p>Akhilesh</p><p>Sunil-Neeta</p><p>Salil-Vandana</p></div></div></div>
 <div><h4>WBCF</h4>
 <p>Yesha-Saksham</p><p>Sankalp-Harshita</p><p>Shreya-Mudit</p><p>Kripansh</p><p>Suruchi-Arvind</p><p>Arpit-Shilpa</p><p>Aayush</p><p>Gauri</p><p>Sanskar</p><p>Aaryan</p></div></div>
-<div class="kid"><small>Cutest invitation </small><q>Mele Mama Ki Shaadi mein Jalul Jalul Aana</q><p>Shravya</p></div>
+<div class="kid"><small>Cutest invitation </small><q>Mele Mama Ki Shaadi mein Jalul Jalul Aana</q><p class="sv">- Shravya</p></div>
 <h2 class="d fn">Poojan ♡ Meshva</h2><p class="dd">12 · 12 · 2026</p></div></footer>
 </div>
 </div>
@@ -162,8 +163,8 @@ const EV=[
 {c:'c2',i:'haldi',n:'Haldi',w:'11th December · 2:00 PM',p:'The Mantra One by Blues',s:'',dr:'Pastel colours',ch:['#f4a6c0','#a9dcb4','#f6d14e'],cn:'Pink · Green · Yellow',q:'The Mantra One by Blues SG Highway Ahmedabad'},
 {c:'c5',i:'bhaat',n:'Bhaat & Mandap',w:'11th December · 4:30 PM',p:'The Mantra One by Blues',s:'',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
 {c:'c3',i:'sangeet',n:'Sangeet & Dinner',w:'11th December · 6:30 PM',p:'Hotel Grand Elegance',s:'Sindhu Bhavan, Ahmedabad',dr:'',q:'Hotel Grand Elegance Sindhu Bhavan Ahmedabad'},
-{c:'c6',i:'baraat',n:'Baraat',w:'12th December · 10:30 AM',p:'The Mantra One by Blues',s:'',dr:'',q:'The Mantra One by Blues SG Highway Ahmedabad'},
-{c:'c4',i:'wedding',n:'The Wedding',w:'12th December 2026 · 12:30 PM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'}];
+{c:'c6',i:'baraat',n:'Baraat',w:'12th December · 10:30 AM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'},
+{c:'c4',i:'wedding',n:'The Wedding',w:'12th December · 12:30 PM',p:'The Rajpath Club',s:'SG Highway, Ahmedabad',dr:'',q:'The Rajpath Club SG Highway Ahmedabad'}];
 $('#evs').innerHTML=EV.map(e=>`<article class="ar ${e.c}${e.i?' hasim':''}">${e.i?`<img class="im ${e.i}" alt="" decoding="async" src="${IM[e.i]}">`:''}<p class="wh">${e.w}</p><h3 class="d">${e.n}</h3>${e.p?`<p class="pl">${e.p}${e.s?`<small>${e.s}</small>`:''}</p>`:''}${e.dr?`<hr><div class="dc"><b>Dress</b>${e.ch?`<div class="chips">${e.ch.map(c=>`<i style="background:${c}"></i>`).join('')}</div>${e.cn}<br>`:''}${e.dr}</div>`:''}${e.q?`<a class="bt" target="_blank" rel="noopener" href="${M(e.q)}">${pin}Get directions</a>`:''}</article>`).join('');
 $('#stl').href=M('The Mantra One by Blues SG Highway Ahmedabad');$('#stl').innerHTML=pin+'Get directions';
 /* countdown */
